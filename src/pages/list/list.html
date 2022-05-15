@@ -3,18 +3,25 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>List</ion-title>
+    <ion-title>Teori emner</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-start></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-end>
-        {{item.note}}
+    <div class="bar bar-subheader">
+        <ion-img class="ion-img" [width]="imgWidth" [height]="imgHeight" src="/assets/imgs/escalade.jpg"></ion-img>
       </div>
+  <ion-list>
+      <!--{{storagetype}}-->
+    <button ion-item *ngFor="let item of topics" (click)="itemTapped($event, item)">
+        <div class="item item-thumbnail-left">
+            <img src="{{item.imgpath}}">
+            <div class="wrap">
+                <h2>{{item.title}}</h2>
+                <!--{{item.id}}-->
+                <p>{{item.note}}</p>
+            </div>
+        </div>
     </button>
   </ion-list>
   <div *ngIf="selectedItem" padding>

@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{page?.title}}</ion-title>
+    <div class="rightColumn">
+      <div class="difficultyText">{{ selectedDifficultyId == true ? 'Koreansk - Dansk' : 'Dansk - Koreansk' }}  </div>
+      <ion-item class="content">
+          <ion-toggle color="dark" class="toggle toggle-ios toggle-ios-dark ng-untouched ng-pristine ng-valid" [(ngModel)]="selectedDifficultyId" (ionChange)="toggleDifficulties()"  checked="false"></ion-toggle>
+      </ion-item>
+    </div>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+<!--      {{storagetype}}
+      {{topicid}}-->
+    <button ion-item *ngFor="let item of levels" (click)="itemTapped($event, item)">
+        <div class="item item-thumbnail-left">
+            <img class="nocrop" src="{{item.imgpath}}">
+            <div class="wrap">
+                <h2>{{item.title}}</h2>
+                <p>{{item.note}}</p>
+            </div>
+        </div>
+    </button>
+  </ion-list>
+  <!-- <div *ngIf="selectedItem" padding>
+    You navigated here from <b>{{selectedItem.title}}</b>
+  </div> -->
+
+
+</ion-content>
+<ion-footer no-shadow>
+
+</ion-footer>

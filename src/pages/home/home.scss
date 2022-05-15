@@ -1,3 +1,41 @@
 page-home {
-
+     h1{
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        font-size: 115px;
+        line-height: 50px;
+        margin-bottom:35px;
+        text-align: center;
+        font-weight: bold;
+        .h11{
+            opacity: 0.3;
+            font-size: 110px;
+        }
+        .h12{
+            opacity: 0.5;
+            font-size: 110px;
+        }
+        .h13{
+            opacity: 0.7;
+            font-size: 100px;
+        }
+        .h14{
+            opacity: 0.3;
+            font-size: 100px;
+        }
+        small{
+            font-size: 60%;
+            line-height: 26px;
+            opacity: 0.3;
+            margin-top: -100px;
+        }
+    }
+    p{
+        padding-top:35px;
+        padding:20px;
+        text-align: center;
+        margin-bottom:20px;
+        font-size: 18px;
+        line-height: 29px;
+    }
 }

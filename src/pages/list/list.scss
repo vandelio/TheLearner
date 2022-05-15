@@ -1,3 +1,8 @@
 page-list {
-
+    .list .item-md .wrap, .list .item-ios .wrap {
+        padding-left: 30px;
+        margin-bottom: 0;
+        float: left;
+        width: auto;
+    }
 }

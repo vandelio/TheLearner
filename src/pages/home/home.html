@@ -3,16 +3,47 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title></ion-title>
   </ion-navbar>
 </ion-header>
+<!--<ion-content #popoverContent padding>
 
+    <div #popoverText margin-top margin-bottom>
+      <ion-slides>
+          <h2>Prepare to become even smarter</h2>
+          <ion-slide>
+            You are about to start learning.<br><br>Every <b>Topic</b> you can learn from here, are split into <b>Levels</b> and within each level, theres a bunch of <b>Questions</b> in different forms
+          </ion-slide>
+          <ion-slide>
+             The Author of the Topic sets the rules for point and levels, but typically they authentic levels for that specific topic.
+          </ion-slide>
+          <ion-slide>
+           For example the topic; Taekwondo, uses the correct terms for belts you can acquire through hard traning and passion. In this process its part of the legacy of the sport, that the student knows the correct Korean terms for each technique required within the belt degree they are going to achieve.
+          </ion-slide>
+          <ion-slide>
+            So naturally the questions in the topic Taekwondo, are based on the levels from the real world Taekwondo.<br>When you are ready, just open the menu and select the desired topic and start learning rightaway.
+          </ion-slide>
+      </ion-slides>
+     </div>
+
+  </ion-content>-->
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+    <ion-img style=" width:calc(100% + 32px); margin-left:-16px;margin-top:-50px;height:auto;contain:content;" src="assets/imgs/splash.jpg"></ion-img> 
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <button ion-button class="danger"  (click)="presentRadioPopover($event)">Instruktioner ?</button>
+
+    <br>
+
+
 </ion-content>
+<ion-footer no-shadow>
+<!--    <ion-toolbar position="bottom">
+    </ion-toolbar>-->
+    <button ion-button class="danger" full large (click)="goToLevels()">Kup / Dan</button>
+</ion-footer>

@@ -1,0 +1,57 @@
+page-innerquestions {
+    h4{
+        text-align: center;
+        font-size: 40px;
+    }
+}
+page-levels{
+  .content.item.item-block{
+      background-color:color($colors,darkerblue);
+  }
+  .toggle-ios-dark.toggle-checked .toggle-icon{
+      background-color:color($colors,darkerblue);
+  }
+  .toggle-ios .toggle-icon{
+      background-color:color($colors,darkerblue);
+      border:1px solid color($colors,danger);
+  }
+  .toggle-ios .toggle-icon::before{
+      background-color:color($colors,danger);
+      opacity: 0.8;
+  }
+  .toggle-inner{
+    width: 20px !important;
+    left:0 !important;
+  }
+  .toggle-md-dark.toggle-checked .toggle-inner {
+      background-color:color($colors,danger);
+  }
+  .footer.footer-ios .content,
+  .toggle-ios .toggle-inner{
+      background-color:color($colors,danger);
+  }
+  .footer{
+    color:color($colors,darkerblue);
+  }
+  .toggle-ios-dark.toggle-checked .toggle-icon{
+    border:1px solid color($colors,danger);
+  }
+  .rightColumn{
+    float: right;
+    width: 80%;
+    height: 30px;
+    margin-top: -6px;
+    .item-md.item-block .item-inner{
+      border:none;
+    }
+  }
+  .difficultyText{
+    position: absolute;
+    right: 30%;
+    z-index: 1000;
+    color: color($colors,danger);
+    padding: 10px;
+    text-align: center;
+    width: 41%;
+  }
+}

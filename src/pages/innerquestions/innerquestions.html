@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{timeParsed}}</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+    <div class="pointbar">
+        <div class="progress-outer">
+            <div class="progress-inner" [style.width]="progress + '%'">
+                {{progress}}
+            </div>
+        </div>
+
+        <div class="col1">XP: {{userXp}}</div>
+        <div class="col2">Question no. {{totalQuestionsAnswered}}</div>
+
+    </div>
+    <h4 *ngIf="difficultyChanged">{{questionsRound[0]?.answer}} <br></h4>
+    <h4 *ngIf="!difficultyChanged">{{questionsRound[0]?.question}} <br></h4>
+    <br>
+    <br>
+    <button ion-button class="primary" *ngIf="soundstatus"  (click)="playSound()">Play Sound</button>
+
+    <br>
+    <br>
+    <br>
+    <div>Dette er fra {{levelid_getname}}</div>
+
+</ion-content>
+<ion-footer no-shadow>
+    <button ion-button full large class="danger" (click)="presentAnswarOption()">Vis svarmuligheder</button>
+</ion-footer>
